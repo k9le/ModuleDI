@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		115FB19BC51C1193191CBF33 /* SecondScreenDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54281F6E77F95F951DA6FE06 /* SecondScreenDI.swift */; };
+		1279580CF70448965BBFA13C /* NetworkServiceInterface.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = AE2C38C6D8372EF051F3D34D /* NetworkServiceInterface.framework */; };
+		14C31518A5683ACA14A042E6 /* SecondScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B6F6BD523E8E53EB581A9E /* SecondScreenPresenter.swift */; };
+		226EEEA55BC18CE85A9F9417 /* SecondScreenInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C751221A81D1C51E6E871B /* SecondScreenInterface.swift */; };
+		2C6A82DD92DA5254C9F19286 /* Swinject.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = A1D684D2A02079A920B3B9FF /* Swinject.framework */; };
+		48E7643A52B6D9DD6F209B32 /* Swinject.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = A1D684D2A02079A920B3B9FF /* Swinject.framework */; };
+		517E6CA59C2A9A00D7D2652A /* PersistenceServiceInterface.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 5B541C14A18D835372C2835A /* PersistenceServiceInterface.framework */; };
+		586071C94CA0E9555C30D50C /* SecondScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A703EEFEB3CC456D876C2E9 /* SecondScreenRouter.swift */; };
+		5DBE3AAF238F25741D0D65DD /* SecondScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4766BEB54FF1C7A7928176F7 /* SecondScreenViewController.swift */; };
+		92B0B1A4C6A12B2E6C080AD1 /* SecondScreenInterface.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 01864D7FED46D19ECE758186 /* SecondScreenInterface.framework */; };
+		BEAAB8FF3AC9E24BEDA48B41 /* SecondScreenFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60DB5734DC541A188167387 /* SecondScreenFactoryImpl.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC3E8E2ED00580432E2D05E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B15C6F34EE11154C8B679FE5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9502195E1773A3ED0756A094;
+			remoteInfo = SecondScreenInterface;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		381D90A61775C97813D838B8 /* Dependencies */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstSubfolderSpec = 16;
+			files = (
+				2C6A82DD92DA5254C9F19286 /* Swinject.framework in Dependencies */,
+			);
+			name = Dependencies;
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		6E8A21F0CC7169D671A12A3B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84478680138C4E416FC959CD /* Dependencies */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstSubfolderSpec = 16;
+			files = (
+				1279580CF70448965BBFA13C /* NetworkServiceInterface.framework in Dependencies */,
+				517E6CA59C2A9A00D7D2652A /* PersistenceServiceInterface.framework in Dependencies */,
+				92B0B1A4C6A12B2E6C080AD1 /* SecondScreenInterface.framework in Dependencies */,
+				48E7643A52B6D9DD6F209B32 /* Swinject.framework in Dependencies */,
+			);
+			name = Dependencies;
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		BDAEA4D5F44DA1D64FF6BBEA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		01864D7FED46D19ECE758186 /* SecondScreenInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SecondScreenInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1579337E344F5EEB73670369 /* SecondScreenInterface-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SecondScreenInterface-Info.plist"; sourceTree = "<group>"; };
+		4766BEB54FF1C7A7928176F7 /* SecondScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenViewController.swift; sourceTree = "<group>"; };
+		54281F6E77F95F951DA6FE06 /* SecondScreenDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenDI.swift; sourceTree = "<group>"; };
+		598E89634A65B5500378C140 /* SecondScreenImpl-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SecondScreenImpl-Info.plist"; sourceTree = "<group>"; };
+		5A703EEFEB3CC456D876C2E9 /* SecondScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenRouter.swift; sourceTree = "<group>"; };
+		5B541C14A18D835372C2835A /* PersistenceServiceInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PersistenceServiceInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1D684D2A02079A920B3B9FF /* Swinject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swinject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5145466CEC900E2678C098D /* SecondScreenImpl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SecondScreenImpl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE2C38C6D8372EF051F3D34D /* NetworkServiceInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkServiceInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0C751221A81D1C51E6E871B /* SecondScreenInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenInterface.swift; sourceTree = "<group>"; };
+		D4B6F6BD523E8E53EB581A9E /* SecondScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenPresenter.swift; sourceTree = "<group>"; };
+		E60DB5734DC541A188167387 /* SecondScreenFactoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenFactoryImpl.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		119AFD7350BC1517109FC41F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACC840DCE8E1F0395F5E6892 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2DEC1A5A65E08E2B0FB0D344 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE2C38C6D8372EF051F3D34D /* NetworkServiceInterface.framework */,
+				5B541C14A18D835372C2835A /* PersistenceServiceInterface.framework */,
+				A5145466CEC900E2678C098D /* SecondScreenImpl.framework */,
+				01864D7FED46D19ECE758186 /* SecondScreenInterface.framework */,
+				A1D684D2A02079A920B3B9FF /* Swinject.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4E1154A211D6B0861902E5EC /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				54281F6E77F95F951DA6FE06 /* SecondScreenDI.swift */,
+				E60DB5734DC541A188167387 /* SecondScreenFactoryImpl.swift */,
+				D4B6F6BD523E8E53EB581A9E /* SecondScreenPresenter.swift */,
+				5A703EEFEB3CC456D876C2E9 /* SecondScreenRouter.swift */,
+				4766BEB54FF1C7A7928176F7 /* SecondScreenViewController.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		4EEFD13E19F9E524FB04E6A1 /* Derived */ = {
+			isa = PBXGroup;
+			children = (
+				C053EDF54DBF8C298630DBDE /* InfoPlists */,
+			);
+			path = Derived;
+			sourceTree = "<group>";
+		};
+		81AFE1CD5BEF1AA6D65C84DE /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				D0C751221A81D1C51E6E871B /* SecondScreenInterface.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		A2097F46DE096797F0241822 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				4EEFD13E19F9E524FB04E6A1 /* Derived */,
+				81AFE1CD5BEF1AA6D65C84DE /* Interface */,
+				4E1154A211D6B0861902E5EC /* Sources */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		C053EDF54DBF8C298630DBDE /* InfoPlists */ = {
+			isa = PBXGroup;
+			children = (
+				598E89634A65B5500378C140 /* SecondScreenImpl-Info.plist */,
+				1579337E344F5EEB73670369 /* SecondScreenInterface-Info.plist */,
+			);
+			path = InfoPlists;
+			sourceTree = "<group>";
+		};
+		D57D381CDC2CF5F83E83A1FD = {
+			isa = PBXGroup;
+			children = (
+				A2097F46DE096797F0241822 /* Project */,
+				2DEC1A5A65E08E2B0FB0D344 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		131626C2AA7A6DC8E9222D8F /* SecondScreenImpl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0452317B6BB3BEB0EC119EF6 /* Build configuration list for PBXNativeTarget "SecondScreenImpl" */;
+			buildPhases = (
+				F3CFA3F71601E2480F4CB815 /* Sources */,
+				F4DCFA2328111608E125F402 /* Resources */,
+				6E8A21F0CC7169D671A12A3B /* Embed Frameworks */,
+				119AFD7350BC1517109FC41F /* Frameworks */,
+				84478680138C4E416FC959CD /* Dependencies */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5A3812E0434354C66394E67 /* PBXTargetDependency */,
+			);
+			name = SecondScreenImpl;
+			productName = SecondScreenImpl;
+			productReference = A5145466CEC900E2678C098D /* SecondScreenImpl.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9502195E1773A3ED0756A094 /* SecondScreenInterface */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C94C0FF6D009B89ABD64D5E9 /* Build configuration list for PBXNativeTarget "SecondScreenInterface" */;
+			buildPhases = (
+				ED01400B671F9E012B62677F /* Sources */,
+				FC2E2EC106D2229B8CBB57F5 /* Resources */,
+				BDAEA4D5F44DA1D64FF6BBEA /* Embed Frameworks */,
+				ACC840DCE8E1F0395F5E6892 /* Frameworks */,
+				381D90A61775C97813D838B8 /* Dependencies */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SecondScreenInterface;
+			productName = SecondScreenInterface;
+			productReference = 01864D7FED46D19ECE758186 /* SecondScreenInterface.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B15C6F34EE11154C8B679FE5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 553BA6910092E3F3666B1011 /* Build configuration list for PBXProject "SecondScreen" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = D57D381CDC2CF5F83E83A1FD;
+			productRefGroup = 2DEC1A5A65E08E2B0FB0D344 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				131626C2AA7A6DC8E9222D8F /* SecondScreenImpl */,
+				9502195E1773A3ED0756A094 /* SecondScreenInterface */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4DCFA2328111608E125F402 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC2E2EC106D2229B8CBB57F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED01400B671F9E012B62677F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				226EEEA55BC18CE85A9F9417 /* SecondScreenInterface.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3CFA3F71601E2480F4CB815 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				115FB19BC51C1193191CBF33 /* SecondScreenDI.swift in Sources */,
+				BEAAB8FF3AC9E24BEDA48B41 /* SecondScreenFactoryImpl.swift in Sources */,
+				14C31518A5683ACA14A042E6 /* SecondScreenPresenter.swift in Sources */,
+				586071C94CA0E9555C30D50C /* SecondScreenRouter.swift in Sources */,
+				5DBE3AAF238F25741D0D65DD /* SecondScreenViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B5A3812E0434354C66394E67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SecondScreenInterface;
+			target = 9502195E1773A3ED0756A094 /* SecondScreenInterface */;
+			targetProxy = AC3E8E2ED00580432E2D05E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0236E284A1ABF4878AD90971 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Derived/InfoPlists/SecondScreenInterface-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.ModuleDI.SecondScreenInterface;
+				PRODUCT_NAME = SecondScreenInterface;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		23EAC63EC897E0DAB28D84EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Derived/InfoPlists/SecondScreenImpl-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.ModuleDI.SecondScreenImpl;
+				PRODUCT_NAME = SecondScreenImpl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					DEBUG,
+				);
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3359351E75AD30BE9A39AB91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Derived/InfoPlists/SecondScreenInterface-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.ModuleDI.SecondScreenInterface;
+				PRODUCT_NAME = SecondScreenInterface;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					DEBUG,
+				);
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		649219440D12E405F25ED8A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Derived/InfoPlists/SecondScreenImpl-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.ModuleDI.SecondScreenImpl;
+				PRODUCT_NAME = SecondScreenImpl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9224BC910ABF120B502ACB75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BFED31C6DDEE959A616FA2C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0452317B6BB3BEB0EC119EF6 /* Build configuration list for PBXNativeTarget "SecondScreenImpl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23EAC63EC897E0DAB28D84EE /* Debug */,
+				649219440D12E405F25ED8A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		553BA6910092E3F3666B1011 /* Build configuration list for PBXProject "SecondScreen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9224BC910ABF120B502ACB75 /* Debug */,
+				BFED31C6DDEE959A616FA2C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C94C0FF6D009B89ABD64D5E9 /* Build configuration list for PBXNativeTarget "SecondScreenInterface" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3359351E75AD30BE9A39AB91 /* Debug */,
+				0236E284A1ABF4878AD90971 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B15C6F34EE11154C8B679FE5 /* Project object */;
+}

@@ -1,0 +1,570 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10AAE35495C1F972FC394218 /* PersistenceServiceDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160EC8478E669727971CBE41 /* PersistenceServiceDI.swift */; };
+		122E5040B3E895503EC029A9 /* PersistenceServiceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA03206A81C8A7A648FE53E7 /* PersistenceServiceInterface.swift */; };
+		144E474DA38EC6FBC850D274 /* Swinject.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 3403E04AFF2CFC3332470329 /* Swinject.framework */; };
+		2DFBCCF51990FA273D14172B /* PersistenceServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1752350D7C84CDC5FD0F6D /* PersistenceServiceImpl.swift */; };
+		6EED898ADF8E5E225A02C5F3 /* PersistenceServiceInterface.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 864D191C9EE6011FFC9E1069 /* PersistenceServiceInterface.framework */; };
+		8B28FE53898D94F076DCAC17 /* Swinject.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 3403E04AFF2CFC3332470329 /* Swinject.framework */; };
+		F5793938FEF80A1C4FDD16AE /* PersistenceServiceFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9627DAF359AE2C01A530D4B0 /* PersistenceServiceFactoryImpl.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		312EC19D3C874ED902431BEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 137F29621749903EDC9C869D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 592B7A2987878ACA71E50BD9;
+			remoteInfo = PersistenceServiceInterface;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1F282549D09F36B52FC8D16D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32DBD0BAB04003B36BA3CE6B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C6A8E15404AAD6687D9600E /* Dependencies */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstSubfolderSpec = 16;
+			files = (
+				8B28FE53898D94F076DCAC17 /* Swinject.framework in Dependencies */,
+			);
+			name = Dependencies;
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		FA25A808DF519EBD47DCFC0F /* Dependencies */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstSubfolderSpec = 16;
+			files = (
+				6EED898ADF8E5E225A02C5F3 /* PersistenceServiceInterface.framework in Dependencies */,
+				144E474DA38EC6FBC850D274 /* Swinject.framework in Dependencies */,
+			);
+			name = Dependencies;
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		05FBE09997C4532E3D11F0B5 /* PersistenceServiceImpl-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "PersistenceServiceImpl-Info.plist"; sourceTree = "<group>"; };
+		0D1752350D7C84CDC5FD0F6D /* PersistenceServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceServiceImpl.swift; sourceTree = "<group>"; };
+		160EC8478E669727971CBE41 /* PersistenceServiceDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceServiceDI.swift; sourceTree = "<group>"; };
+		3403E04AFF2CFC3332470329 /* Swinject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swinject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		864D191C9EE6011FFC9E1069 /* PersistenceServiceInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PersistenceServiceInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9627DAF359AE2C01A530D4B0 /* PersistenceServiceFactoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceServiceFactoryImpl.swift; sourceTree = "<group>"; };
+		9BB2E495BC9032AA6BB6FE8C /* PersistenceServiceInterface-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "PersistenceServiceInterface-Info.plist"; sourceTree = "<group>"; };
+		BA03206A81C8A7A648FE53E7 /* PersistenceServiceInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceServiceInterface.swift; sourceTree = "<group>"; };
+		F728C5AD802EA792C528DAFE /* PersistenceServiceImpl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PersistenceServiceImpl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4CAA54303D8859929EF14DD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		767ED047B5EA5FF5C213B4D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0872F359EBE888ADE952E073 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F728C5AD802EA792C528DAFE /* PersistenceServiceImpl.framework */,
+				864D191C9EE6011FFC9E1069 /* PersistenceServiceInterface.framework */,
+				3403E04AFF2CFC3332470329 /* Swinject.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A76D3A5DBE6AD14AE4514CA /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				4FBCC4008DC29D1350352DE6 /* Derived */,
+				3313979DEBEFBE3872566FB1 /* Interface */,
+				8037B97516CDAC9D7F32ECF6 /* Sources */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		3313979DEBEFBE3872566FB1 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				BA03206A81C8A7A648FE53E7 /* PersistenceServiceInterface.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		37775E4B86A2C445B68B994D /* InfoPlists */ = {
+			isa = PBXGroup;
+			children = (
+				05FBE09997C4532E3D11F0B5 /* PersistenceServiceImpl-Info.plist */,
+				9BB2E495BC9032AA6BB6FE8C /* PersistenceServiceInterface-Info.plist */,
+			);
+			path = InfoPlists;
+			sourceTree = "<group>";
+		};
+		4FBCC4008DC29D1350352DE6 /* Derived */ = {
+			isa = PBXGroup;
+			children = (
+				37775E4B86A2C445B68B994D /* InfoPlists */,
+			);
+			path = Derived;
+			sourceTree = "<group>";
+		};
+		8037B97516CDAC9D7F32ECF6 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				160EC8478E669727971CBE41 /* PersistenceServiceDI.swift */,
+				9627DAF359AE2C01A530D4B0 /* PersistenceServiceFactoryImpl.swift */,
+				0D1752350D7C84CDC5FD0F6D /* PersistenceServiceImpl.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		B52A54E53189FB68F9B2BE47 = {
+			isa = PBXGroup;
+			children = (
+				0A76D3A5DBE6AD14AE4514CA /* Project */,
+				0872F359EBE888ADE952E073 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		592B7A2987878ACA71E50BD9 /* PersistenceServiceInterface */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C796FFFADB687E48F018D56F /* Build configuration list for PBXNativeTarget "PersistenceServiceInterface" */;
+			buildPhases = (
+				F4B965157C230299792DEE35 /* Sources */,
+				D2AE95178A8865240E13D889 /* Resources */,
+				32DBD0BAB04003B36BA3CE6B /* Embed Frameworks */,
+				4CAA54303D8859929EF14DD9 /* Frameworks */,
+				4C6A8E15404AAD6687D9600E /* Dependencies */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PersistenceServiceInterface;
+			productName = PersistenceServiceInterface;
+			productReference = 864D191C9EE6011FFC9E1069 /* PersistenceServiceInterface.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ACE319FF78999D0573B5E198 /* PersistenceServiceImpl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AC72886425710FCCED423FE /* Build configuration list for PBXNativeTarget "PersistenceServiceImpl" */;
+			buildPhases = (
+				27CEC46160C9EC3D8F2AFB1A /* Sources */,
+				89DE8486347B880D641145B8 /* Resources */,
+				1F282549D09F36B52FC8D16D /* Embed Frameworks */,
+				767ED047B5EA5FF5C213B4D1 /* Frameworks */,
+				FA25A808DF519EBD47DCFC0F /* Dependencies */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				575AD6087D682BDC00FF51E1 /* PBXTargetDependency */,
+			);
+			name = PersistenceServiceImpl;
+			productName = PersistenceServiceImpl;
+			productReference = F728C5AD802EA792C528DAFE /* PersistenceServiceImpl.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		137F29621749903EDC9C869D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = A6F04534065C5D4AF3310749 /* Build configuration list for PBXProject "PersistenceService" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = B52A54E53189FB68F9B2BE47;
+			productRefGroup = 0872F359EBE888ADE952E073 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACE319FF78999D0573B5E198 /* PersistenceServiceImpl */,
+				592B7A2987878ACA71E50BD9 /* PersistenceServiceInterface */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		89DE8486347B880D641145B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AE95178A8865240E13D889 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27CEC46160C9EC3D8F2AFB1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10AAE35495C1F972FC394218 /* PersistenceServiceDI.swift in Sources */,
+				F5793938FEF80A1C4FDD16AE /* PersistenceServiceFactoryImpl.swift in Sources */,
+				2DFBCCF51990FA273D14172B /* PersistenceServiceImpl.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4B965157C230299792DEE35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				122E5040B3E895503EC029A9 /* PersistenceServiceInterface.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		575AD6087D682BDC00FF51E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PersistenceServiceInterface;
+			target = 592B7A2987878ACA71E50BD9 /* PersistenceServiceInterface */;
+			targetProxy = 312EC19D3C874ED902431BEA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		142304498F42ED1DEA577F2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Derived/InfoPlists/PersistenceServiceInterface-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.ModuleDI.PersistenceServiceInterface;
+				PRODUCT_NAME = PersistenceServiceInterface;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		65CAAF1AD18420CDE97E8B05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Derived/InfoPlists/PersistenceServiceImpl-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.ModuleDI.PersistenceServiceImpl;
+				PRODUCT_NAME = PersistenceServiceImpl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					DEBUG,
+				);
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6B96ED73B487FF62A78ACFEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		900F1E9E24A7B07ABECCAB49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Derived/InfoPlists/PersistenceServiceInterface-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.ModuleDI.PersistenceServiceInterface;
+				PRODUCT_NAME = PersistenceServiceInterface;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					DEBUG,
+				);
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9848BB6E5F3677669D9BB45F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Derived/InfoPlists/PersistenceServiceImpl-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.ModuleDI.PersistenceServiceImpl;
+				PRODUCT_NAME = PersistenceServiceImpl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9E7AD648B4316CCC488C7514 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0AC72886425710FCCED423FE /* Build configuration list for PBXNativeTarget "PersistenceServiceImpl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65CAAF1AD18420CDE97E8B05 /* Debug */,
+				9848BB6E5F3677669D9BB45F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6F04534065C5D4AF3310749 /* Build configuration list for PBXProject "PersistenceService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B96ED73B487FF62A78ACFEB /* Debug */,
+				9E7AD648B4316CCC488C7514 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C796FFFADB687E48F018D56F /* Build configuration list for PBXNativeTarget "PersistenceServiceInterface" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				900F1E9E24A7B07ABECCAB49 /* Debug */,
+				142304498F42ED1DEA577F2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 137F29621749903EDC9C869D /* Project object */;
+}

@@ -4,12 +4,19 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>ModuleDI.xcscheme_^#shared#^_</key>
+		<key>NetworkServiceImpl.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
 			<true/>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>4</integer>
+		</dict>
+		<key>NetworkServiceInterface.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+			<key>orderHint</key>
+			<integer>5</integer>
 		</dict>
 	</dict>
 </dict>
