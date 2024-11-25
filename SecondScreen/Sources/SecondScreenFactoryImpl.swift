@@ -11,29 +11,32 @@ import NetworkServiceInterface
 import PersistenceServiceInterface
 import Swinject
 
-final class SecondScreenFactoryImpl: SecondScreenFactory {
+public final class SecondScreenComposer<Network: NetworkServiceFactory, Persistance: PersistenceServiceFactory, Router: SecondScreenRouterInterface> {
 
-    private let diResolver: any Swinject.Resolver
+    public struct Dependencies {
+        let networkServiceFactory: Network
+        let persistenceServiceFactory: Persistance
+        let router: Router
+        let theme: UIUserInterfaceStyle
 
-    init(diResolver: any Swinject.Resolver) {
-        self.diResolver = diResolver
+        public init(networkServiceFactory: Network, persistenceServiceFactory: Persistance, router: Router, theme: UIUserInterfaceStyle) {
+            self.networkServiceFactory = networkServiceFactory
+            self.persistenceServiceFactory = persistenceServiceFactory
+            self.router = router
+            self.theme = theme
+        }
     }
 
-    func makeSecondScreen(with theme: UIUserInterfaceStyle) -> UIViewController {
+    public init() {}
 
-        let router = SecondScreenRouter()
-
-        let networkServiceFactory = diResolver.resolve(NetworkServiceFactory.self)!
-        let persistenceServiceFactory = diResolver.resolve(PersistenceServiceFactory.self)!
-
+    public func makeScreen(dependencies: Dependencies) -> UIViewController {
         let presenter = SecondScreenPresenterImpl(
-            router: router,
-            networkService: networkServiceFactory.makeNetworkService(),
-            persistenceService: persistenceServiceFactory.makePersistenceService()
+            router: dependencies.router,
+            networkService: dependencies.networkServiceFactory.makeNetworkService(),
+            persistenceService: dependencies.persistenceServiceFactory.makePersistenceService()
         )
 
-        let vc = SecondScreenViewController(theme: theme, presenter: presenter)
-        router.fromVC = vc
+        let vc = SecondScreenViewController(theme: dependencies.theme, presenter: presenter)
         presenter.view = vc
 
         return vc

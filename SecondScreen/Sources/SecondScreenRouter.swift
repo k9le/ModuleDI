@@ -7,14 +7,6 @@
 
 import UIKit
 
-protocol SecondScreenRouterInterface: AnyObject {
+public protocol SecondScreenRouterInterface {
     func popBack()
-}
-
-final class SecondScreenRouter: SecondScreenRouterInterface {
-    weak var fromVC: UIViewController?
-
-    func popBack() {
-        fromVC?.navigationController?.popViewController(animated: true)
-    }
 }

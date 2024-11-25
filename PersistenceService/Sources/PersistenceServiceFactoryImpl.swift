@@ -8,15 +8,11 @@
 import PersistenceServiceInterface
 import Swinject
 
-final class PersistenceServiceFactoryImpl: PersistenceServiceFactory {
+public final class PersistenceServiceFactoryImpl: PersistenceServiceFactory {
 
-    private let diResolver: any Swinject.Resolver
+    public init() {}
 
-    init(diResolver: any Swinject.Resolver) {
-        self.diResolver = diResolver
-    }
-
-    func makePersistenceService() -> PersistenceServiceInterface {
-        PersistenceServiceImpl(diResolver: diResolver)
+    public func makePersistenceService() -> PersistenceServiceInterface {
+        PersistenceServiceImpl()
     }
 }
