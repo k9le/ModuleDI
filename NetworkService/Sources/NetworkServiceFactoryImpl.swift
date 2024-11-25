@@ -8,15 +8,11 @@
 import NetworkServiceInterface
 import Swinject
 
-final class NetworkServiceFactoryImpl: NetworkServiceFactory {
+public final class NetworkServiceFactoryImpl: NetworkServiceFactory {
 
-    private let diResolver: any Swinject.Resolver
+    public init() {}
 
-    init(diResolver: any Swinject.Resolver) {
-        self.diResolver = diResolver
-    }
-
-    func makeNetworkService() -> NetworkServiceInterface {
-        NetworkServiceImpl(diResolver: diResolver)
+    public func makeNetworkService() -> NetworkServiceInterface {
+        NetworkServiceImpl()
     }
 }
