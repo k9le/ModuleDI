@@ -6,15 +6,8 @@
 //
 
 import NetworkServiceInterface
-import Swinject
 
 final class NetworkServiceImpl: NetworkServiceInterface {
-
-    private let diResolver: any Swinject.Resolver
-
-    init(diResolver: any Swinject.Resolver) {
-        self.diResolver = diResolver
-    }
 
     func makeNetworkRequest() {
         print(">>>> Network request")

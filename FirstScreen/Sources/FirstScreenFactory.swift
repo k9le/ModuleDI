@@ -8,19 +8,14 @@
 import UIKit
 import FirstScreenInterface
 import SecondScreenInterface
-import Swinject
 
-final class FirstScreenFactoryImpl: FirstScreenFactory {
+@objc public
+final class FirstScreenFactoryImpl: NSObject {
 
-    private let diResolver: Swinject.Resolver
-
-    init(diResolver: Swinject.Resolver) {
-        self.diResolver = diResolver
-    }
-
-    func makeFirstScreen() -> UIViewController {
-        let appearance = diResolver.resolve(FirstScreenAppearance.self)!
-        let screen2Factory = diResolver.resolve(SecondScreenFactory.self)!
+    @objc public
+    static func makeFirstScreen(_ appearance: FirstScreenAppearance?) -> UIViewController {
+        let appearance = appearance ?? FirstScreenAppearanceFactory().makeAppearance(forPrefferedId: 1)
+        let screen2Factory = SecondScreenFactory()
 
         let router = FirstScreenRouter(secondScreenFactory: screen2Factory)
         let presenter = FirstScreenPresenterImpl(router: router)

@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BA6B3A9DBE05E648C393B85 /* NetworkServiceFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 342E22543D7B4D393FE49448 /* NetworkServiceFactory.m */; };
 		138AB5319D1CED1605213A47 /* NetworkServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90E0385A18EB2480DAFA70A /* NetworkServiceImpl.swift */; };
-		4879B9876478C7D06993D52C /* Swinject.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 833B3C71969A63D12C9F1DB0 /* Swinject.framework */; };
+		6AD23AB95D0075048B501780 /* NetworkServiceInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 93AFD3C0E28DC1963BD45F5E /* NetworkServiceInterface.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6EDF73D32358F3EDFDFF283F /* NetworkServiceFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 07576B755F556CCE72371E2D /* NetworkServiceFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		73E268CB42C64032612D9908 /* NetworkServiceInterface.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 9894474AF9DC1D17382BA96D /* NetworkServiceInterface.framework */; };
-		8197933F060AB12FC8A5D06F /* Swinject.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 833B3C71969A63D12C9F1DB0 /* Swinject.framework */; };
 		B03506AFAE764B7CEA1550FB /* NetworkServiceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B77EDC29C0BB8B746F58D /* NetworkServiceInterface.swift */; };
-		CB54EE0A046EE7A6E1A97E95 /* NetworkServiceDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97473DE93EB5F396ADD8EFF8 /* NetworkServiceDI.swift */; };
 		CFDD9331F987722C78F0C777 /* NetworkServiceFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0B2A74A4BD393D0D691346 /* NetworkServiceFactoryImpl.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,17 +43,6 @@
 			dstSubfolderSpec = 16;
 			files = (
 				73E268CB42C64032612D9908 /* NetworkServiceInterface.framework in Dependencies */,
-				4879B9876478C7D06993D52C /* Swinject.framework in Dependencies */,
-			);
-			name = Dependencies;
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-		885C6A2A24398C6A178BCE0D /* Dependencies */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 8;
-			dstSubfolderSpec = 16;
-			files = (
-				8197933F060AB12FC8A5D06F /* Swinject.framework in Dependencies */,
 			);
 			name = Dependencies;
 			runOnlyForDeploymentPostprocessing = 1;
@@ -71,11 +60,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		07576B755F556CCE72371E2D /* NetworkServiceFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkServiceFactory.h; sourceTree = "<group>"; };
+		342E22543D7B4D393FE49448 /* NetworkServiceFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkServiceFactory.m; sourceTree = "<group>"; };
 		3A0B2A74A4BD393D0D691346 /* NetworkServiceFactoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceFactoryImpl.swift; sourceTree = "<group>"; };
-		833B3C71969A63D12C9F1DB0 /* Swinject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swinject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BA797CCD8CFFF0D3D120EC2 /* NetworkServiceImpl-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "NetworkServiceImpl-Info.plist"; sourceTree = "<group>"; };
+		93AFD3C0E28DC1963BD45F5E /* NetworkServiceInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkServiceInterface.h; sourceTree = "<group>"; };
 		96BEDF94272827F576C622C9 /* NetworkServiceInterface-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "NetworkServiceInterface-Info.plist"; sourceTree = "<group>"; };
-		97473DE93EB5F396ADD8EFF8 /* NetworkServiceDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceDI.swift; sourceTree = "<group>"; };
 		9894474AF9DC1D17382BA96D /* NetworkServiceInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkServiceInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E97051DCFF6251E1DD75F35F /* NetworkServiceImpl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkServiceImpl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F56B77EDC29C0BB8B746F58D /* NetworkServiceInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceInterface.swift; sourceTree = "<group>"; };
@@ -111,7 +101,7 @@
 		38525DA2689C825D960A837C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				97473DE93EB5F396ADD8EFF8 /* NetworkServiceDI.swift */,
+				342E22543D7B4D393FE49448 /* NetworkServiceFactory.m */,
 				3A0B2A74A4BD393D0D691346 /* NetworkServiceFactoryImpl.swift */,
 				F90E0385A18EB2480DAFA70A /* NetworkServiceImpl.swift */,
 			);
@@ -131,7 +121,6 @@
 			children = (
 				E97051DCFF6251E1DD75F35F /* NetworkServiceImpl.framework */,
 				9894474AF9DC1D17382BA96D /* NetworkServiceInterface.framework */,
-				833B3C71969A63D12C9F1DB0 /* Swinject.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -148,6 +137,8 @@
 		F00FEA030A3B3881E8712A8B /* Interface */ = {
 			isa = PBXGroup;
 			children = (
+				07576B755F556CCE72371E2D /* NetworkServiceFactory.h */,
+				93AFD3C0E28DC1963BD45F5E /* NetworkServiceInterface.h */,
 				F56B77EDC29C0BB8B746F58D /* NetworkServiceInterface.swift */,
 			);
 			path = Interface;
@@ -164,6 +155,18 @@
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5EDCA17BD561C5A4F01C3B06 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EDF73D32358F3EDFDFF283F /* NetworkServiceFactory.h in Headers */,
+				6AD23AB95D0075048B501780 /* NetworkServiceInterface.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		91F661CCC3345F41E2667C0D /* NetworkServiceImpl */ = {
@@ -190,11 +193,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 39A6CAF62357FC0BF8282A86 /* Build configuration list for PBXNativeTarget "NetworkServiceInterface" */;
 			buildPhases = (
+				5EDCA17BD561C5A4F01C3B06 /* Headers */,
 				06098FDEE75E5418759A3A82 /* Sources */,
 				85B71757FD405E9EC1F26793 /* Resources */,
 				32A024D8678D455259A50729 /* Embed Frameworks */,
 				BE1EF068BA5BD55CABA11F69 /* Frameworks */,
-				885C6A2A24398C6A178BCE0D /* Dependencies */,
 			);
 			buildRules = (
 			);
@@ -264,7 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB54EE0A046EE7A6E1A97E95 /* NetworkServiceDI.swift in Sources */,
+				0BA6B3A9DBE05E648C393B85 /* NetworkServiceFactory.m in Sources */,
 				CFDD9331F987722C78F0C777 /* NetworkServiceFactoryImpl.swift in Sources */,
 				138AB5319D1CED1605213A47 /* NetworkServiceImpl.swift in Sources */,
 			);

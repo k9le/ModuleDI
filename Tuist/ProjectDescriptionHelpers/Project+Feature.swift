@@ -7,32 +7,43 @@ extension Project {
         packages: [Package],
         dependencies: [TargetDependency]
     ) -> Self {
-        Self(
+        let implementationModuleName = name + "Impl"
+        let interfaceModulesName = name + "Interface"
+        return Self(
             name: name,
             packages: packages,
             targets: [
                 .target(
-                    name: name + "Impl",
+                    name: implementationModuleName,
                     destinations: .iOS,
                     product: .staticFramework,
-                    bundleId: "io.tuist.ModuleDI.\(name)Impl",
+                    bundleId: "io.tuist.ModuleDI.\(implementationModuleName)",
                     sources: ["Sources/**"],
                     dependencies: [
-                        .external(name: "Swinject"),
-                        .target(name: "\(name)Interface")
+                        .target(name: "\(interfaceModulesName)"),
                     ] + dependencies
                 ),
                 .target(
-                    name: name + "Interface",
+                    name: interfaceModulesName,
                     destinations: .iOS,
                     product: .staticFramework,
-                    bundleId: "io.tuist.ModuleDI.\(name)Interface",
+                    productName: interfaceModulesName, // it's nessesary to allow allForInterface works properly
+                    bundleId: "io.tuist.ModuleDI.\(interfaceModulesName)",
                     sources: "Interface/**",
+                    headers: .allForInterface(interfaceModulesName),
                     dependencies: [
-                        .external(name: "Swinject"),
                     ]
                 )
             ]
+        )
+    }
+}
+
+private extension ProjectDescription.Headers {
+    static func allForInterface(_ name: String) -> Self {
+        return .allHeaders(
+            from: .list(["Interface/**"]),
+            umbrella: "Interface/\(name).h"
         )
     }
 }

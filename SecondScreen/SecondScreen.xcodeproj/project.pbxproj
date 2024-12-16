@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		115FB19BC51C1193191CBF33 /* SecondScreenDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54281F6E77F95F951DA6FE06 /* SecondScreenDI.swift */; };
 		1279580CF70448965BBFA13C /* NetworkServiceInterface.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = AE2C38C6D8372EF051F3D34D /* NetworkServiceInterface.framework */; };
 		14C31518A5683ACA14A042E6 /* SecondScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B6F6BD523E8E53EB581A9E /* SecondScreenPresenter.swift */; };
 		226EEEA55BC18CE85A9F9417 /* SecondScreenInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C751221A81D1C51E6E871B /* SecondScreenInterface.swift */; };
-		2C6A82DD92DA5254C9F19286 /* Swinject.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = A1D684D2A02079A920B3B9FF /* Swinject.framework */; };
-		48E7643A52B6D9DD6F209B32 /* Swinject.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = A1D684D2A02079A920B3B9FF /* Swinject.framework */; };
 		517E6CA59C2A9A00D7D2652A /* PersistenceServiceInterface.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 5B541C14A18D835372C2835A /* PersistenceServiceInterface.framework */; };
 		586071C94CA0E9555C30D50C /* SecondScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A703EEFEB3CC456D876C2E9 /* SecondScreenRouter.swift */; };
 		5DBE3AAF238F25741D0D65DD /* SecondScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4766BEB54FF1C7A7928176F7 /* SecondScreenViewController.swift */; };
+		7C63A9E40CBAACE171B45EC1 /* SecondScreenFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 58DCBC72A12FEF97112BC895 /* SecondScreenFactory.m */; };
+		7E3733E8B78E874537335008 /* SecondScreenFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 459F0B7CA2F6D6DD48121F57 /* SecondScreenFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		92B0B1A4C6A12B2E6C080AD1 /* SecondScreenInterface.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 01864D7FED46D19ECE758186 /* SecondScreenInterface.framework */; };
 		BEAAB8FF3AC9E24BEDA48B41 /* SecondScreenFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60DB5734DC541A188167387 /* SecondScreenFactoryImpl.swift */; };
+		D68B965EDE7F3FAE047383BC /* SecondScreenInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = A56181A4343183FF61E1B621 /* SecondScreenInterface.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,16 +31,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		381D90A61775C97813D838B8 /* Dependencies */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 8;
-			dstSubfolderSpec = 16;
-			files = (
-				2C6A82DD92DA5254C9F19286 /* Swinject.framework in Dependencies */,
-			);
-			name = Dependencies;
-			runOnlyForDeploymentPostprocessing = 1;
-		};
 		6E8A21F0CC7169D671A12A3B /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -59,7 +49,6 @@
 				1279580CF70448965BBFA13C /* NetworkServiceInterface.framework in Dependencies */,
 				517E6CA59C2A9A00D7D2652A /* PersistenceServiceInterface.framework in Dependencies */,
 				92B0B1A4C6A12B2E6C080AD1 /* SecondScreenInterface.framework in Dependencies */,
-				48E7643A52B6D9DD6F209B32 /* Swinject.framework in Dependencies */,
 			);
 			name = Dependencies;
 			runOnlyForDeploymentPostprocessing = 1;
@@ -79,13 +68,14 @@
 /* Begin PBXFileReference section */
 		01864D7FED46D19ECE758186 /* SecondScreenInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SecondScreenInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1579337E344F5EEB73670369 /* SecondScreenInterface-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SecondScreenInterface-Info.plist"; sourceTree = "<group>"; };
+		459F0B7CA2F6D6DD48121F57 /* SecondScreenFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondScreenFactory.h; sourceTree = "<group>"; };
 		4766BEB54FF1C7A7928176F7 /* SecondScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenViewController.swift; sourceTree = "<group>"; };
-		54281F6E77F95F951DA6FE06 /* SecondScreenDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenDI.swift; sourceTree = "<group>"; };
+		58DCBC72A12FEF97112BC895 /* SecondScreenFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondScreenFactory.m; sourceTree = "<group>"; };
 		598E89634A65B5500378C140 /* SecondScreenImpl-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SecondScreenImpl-Info.plist"; sourceTree = "<group>"; };
 		5A703EEFEB3CC456D876C2E9 /* SecondScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenRouter.swift; sourceTree = "<group>"; };
 		5B541C14A18D835372C2835A /* PersistenceServiceInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PersistenceServiceInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1D684D2A02079A920B3B9FF /* Swinject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swinject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5145466CEC900E2678C098D /* SecondScreenImpl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SecondScreenImpl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A56181A4343183FF61E1B621 /* SecondScreenInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondScreenInterface.h; sourceTree = "<group>"; };
 		AE2C38C6D8372EF051F3D34D /* NetworkServiceInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkServiceInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0C751221A81D1C51E6E871B /* SecondScreenInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenInterface.swift; sourceTree = "<group>"; };
 		D4B6F6BD523E8E53EB581A9E /* SecondScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenPresenter.swift; sourceTree = "<group>"; };
@@ -117,7 +107,6 @@
 				5B541C14A18D835372C2835A /* PersistenceServiceInterface.framework */,
 				A5145466CEC900E2678C098D /* SecondScreenImpl.framework */,
 				01864D7FED46D19ECE758186 /* SecondScreenInterface.framework */,
-				A1D684D2A02079A920B3B9FF /* Swinject.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,7 +114,7 @@
 		4E1154A211D6B0861902E5EC /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				54281F6E77F95F951DA6FE06 /* SecondScreenDI.swift */,
+				58DCBC72A12FEF97112BC895 /* SecondScreenFactory.m */,
 				E60DB5734DC541A188167387 /* SecondScreenFactoryImpl.swift */,
 				D4B6F6BD523E8E53EB581A9E /* SecondScreenPresenter.swift */,
 				5A703EEFEB3CC456D876C2E9 /* SecondScreenRouter.swift */,
@@ -145,6 +134,8 @@
 		81AFE1CD5BEF1AA6D65C84DE /* Interface */ = {
 			isa = PBXGroup;
 			children = (
+				459F0B7CA2F6D6DD48121F57 /* SecondScreenFactory.h */,
+				A56181A4343183FF61E1B621 /* SecondScreenInterface.h */,
 				D0C751221A81D1C51E6E871B /* SecondScreenInterface.swift */,
 			);
 			path = Interface;
@@ -179,6 +170,18 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		7787EE85AB5D6A62F531D98D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E3733E8B78E874537335008 /* SecondScreenFactory.h in Headers */,
+				D68B965EDE7F3FAE047383BC /* SecondScreenInterface.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		131626C2AA7A6DC8E9222D8F /* SecondScreenImpl */ = {
 			isa = PBXNativeTarget;
@@ -204,11 +207,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C94C0FF6D009B89ABD64D5E9 /* Build configuration list for PBXNativeTarget "SecondScreenInterface" */;
 			buildPhases = (
+				7787EE85AB5D6A62F531D98D /* Headers */,
 				ED01400B671F9E012B62677F /* Sources */,
 				FC2E2EC106D2229B8CBB57F5 /* Resources */,
 				BDAEA4D5F44DA1D64FF6BBEA /* Embed Frameworks */,
 				ACC840DCE8E1F0395F5E6892 /* Frameworks */,
-				381D90A61775C97813D838B8 /* Dependencies */,
 			);
 			buildRules = (
 			);
@@ -278,7 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				115FB19BC51C1193191CBF33 /* SecondScreenDI.swift in Sources */,
+				7C63A9E40CBAACE171B45EC1 /* SecondScreenFactory.m in Sources */,
 				BEAAB8FF3AC9E24BEDA48B41 /* SecondScreenFactoryImpl.swift in Sources */,
 				14C31518A5683ACA14A042E6 /* SecondScreenPresenter.swift in Sources */,
 				586071C94CA0E9555C30D50C /* SecondScreenRouter.swift in Sources */,
