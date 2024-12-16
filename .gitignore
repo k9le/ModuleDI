@@ -2,3 +2,5 @@
 xcuserdata/
 /Tuist/.build/
 .DS_Store
+/Manifests.xcworkspace/
+/Manifests.xcodeproj/

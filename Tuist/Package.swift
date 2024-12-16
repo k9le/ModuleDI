@@ -1,5 +1,5 @@
 // swift-tools-version: 5.9
-import PackageDescription
+@preconcurrency import PackageDescription
 
 #if TUIST
     import ProjectDescription
@@ -16,6 +16,5 @@ import PackageDescription
 let package = Package(
     name: "ModuleDI",
     dependencies: [
-        .package(url: "https://github.com/Swinject/Swinject.git", from: "2.9.1")
     ]
 )

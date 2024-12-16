@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		10AAE35495C1F972FC394218 /* PersistenceServiceDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160EC8478E669727971CBE41 /* PersistenceServiceDI.swift */; };
 		122E5040B3E895503EC029A9 /* PersistenceServiceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA03206A81C8A7A648FE53E7 /* PersistenceServiceInterface.swift */; };
-		144E474DA38EC6FBC850D274 /* Swinject.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 3403E04AFF2CFC3332470329 /* Swinject.framework */; };
 		2DFBCCF51990FA273D14172B /* PersistenceServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1752350D7C84CDC5FD0F6D /* PersistenceServiceImpl.swift */; };
 		6EED898ADF8E5E225A02C5F3 /* PersistenceServiceInterface.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 864D191C9EE6011FFC9E1069 /* PersistenceServiceInterface.framework */; };
-		8B28FE53898D94F076DCAC17 /* Swinject.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 3403E04AFF2CFC3332470329 /* Swinject.framework */; };
+		83ABE5EA9424BA4C5E9AA0EF /* PersistenceServiceInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F14CF128E636F8C0A580EF7 /* PersistenceServiceInterface.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93024DCE25E06918A161DA65 /* PersistenceServiceFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = AAE16DD175734EE727EA444D /* PersistenceServiceFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AEB1DC630FED3864806FD69B /* PersistenceServiceFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F911311D19B299A064CCB0D1 /* PersistenceServiceFactory.m */; };
 		F5793938FEF80A1C4FDD16AE /* PersistenceServiceFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9627DAF359AE2C01A530D4B0 /* PersistenceServiceFactoryImpl.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,23 +47,12 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4C6A8E15404AAD6687D9600E /* Dependencies */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 8;
-			dstSubfolderSpec = 16;
-			files = (
-				8B28FE53898D94F076DCAC17 /* Swinject.framework in Dependencies */,
-			);
-			name = Dependencies;
-			runOnlyForDeploymentPostprocessing = 1;
-		};
 		FA25A808DF519EBD47DCFC0F /* Dependencies */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 8;
 			dstSubfolderSpec = 16;
 			files = (
 				6EED898ADF8E5E225A02C5F3 /* PersistenceServiceInterface.framework in Dependencies */,
-				144E474DA38EC6FBC850D274 /* Swinject.framework in Dependencies */,
 			);
 			name = Dependencies;
 			runOnlyForDeploymentPostprocessing = 1;
@@ -73,13 +62,14 @@
 /* Begin PBXFileReference section */
 		05FBE09997C4532E3D11F0B5 /* PersistenceServiceImpl-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "PersistenceServiceImpl-Info.plist"; sourceTree = "<group>"; };
 		0D1752350D7C84CDC5FD0F6D /* PersistenceServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceServiceImpl.swift; sourceTree = "<group>"; };
-		160EC8478E669727971CBE41 /* PersistenceServiceDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceServiceDI.swift; sourceTree = "<group>"; };
-		3403E04AFF2CFC3332470329 /* Swinject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swinject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F14CF128E636F8C0A580EF7 /* PersistenceServiceInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersistenceServiceInterface.h; sourceTree = "<group>"; };
 		864D191C9EE6011FFC9E1069 /* PersistenceServiceInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PersistenceServiceInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9627DAF359AE2C01A530D4B0 /* PersistenceServiceFactoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceServiceFactoryImpl.swift; sourceTree = "<group>"; };
 		9BB2E495BC9032AA6BB6FE8C /* PersistenceServiceInterface-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "PersistenceServiceInterface-Info.plist"; sourceTree = "<group>"; };
+		AAE16DD175734EE727EA444D /* PersistenceServiceFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersistenceServiceFactory.h; sourceTree = "<group>"; };
 		BA03206A81C8A7A648FE53E7 /* PersistenceServiceInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceServiceInterface.swift; sourceTree = "<group>"; };
 		F728C5AD802EA792C528DAFE /* PersistenceServiceImpl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PersistenceServiceImpl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F911311D19B299A064CCB0D1 /* PersistenceServiceFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersistenceServiceFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +95,6 @@
 			children = (
 				F728C5AD802EA792C528DAFE /* PersistenceServiceImpl.framework */,
 				864D191C9EE6011FFC9E1069 /* PersistenceServiceInterface.framework */,
-				3403E04AFF2CFC3332470329 /* Swinject.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,6 +112,8 @@
 		3313979DEBEFBE3872566FB1 /* Interface */ = {
 			isa = PBXGroup;
 			children = (
+				AAE16DD175734EE727EA444D /* PersistenceServiceFactory.h */,
+				2F14CF128E636F8C0A580EF7 /* PersistenceServiceInterface.h */,
 				BA03206A81C8A7A648FE53E7 /* PersistenceServiceInterface.swift */,
 			);
 			path = Interface;
@@ -148,7 +139,7 @@
 		8037B97516CDAC9D7F32ECF6 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				160EC8478E669727971CBE41 /* PersistenceServiceDI.swift */,
+				F911311D19B299A064CCB0D1 /* PersistenceServiceFactory.m */,
 				9627DAF359AE2C01A530D4B0 /* PersistenceServiceFactoryImpl.swift */,
 				0D1752350D7C84CDC5FD0F6D /* PersistenceServiceImpl.swift */,
 			);
@@ -165,16 +156,28 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		EF93A9D9C1BF57934B54DA1F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93024DCE25E06918A161DA65 /* PersistenceServiceFactory.h in Headers */,
+				83ABE5EA9424BA4C5E9AA0EF /* PersistenceServiceInterface.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		592B7A2987878ACA71E50BD9 /* PersistenceServiceInterface */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C796FFFADB687E48F018D56F /* Build configuration list for PBXNativeTarget "PersistenceServiceInterface" */;
 			buildPhases = (
+				EF93A9D9C1BF57934B54DA1F /* Headers */,
 				F4B965157C230299792DEE35 /* Sources */,
 				D2AE95178A8865240E13D889 /* Resources */,
 				32DBD0BAB04003B36BA3CE6B /* Embed Frameworks */,
 				4CAA54303D8859929EF14DD9 /* Frameworks */,
-				4C6A8E15404AAD6687D9600E /* Dependencies */,
 			);
 			buildRules = (
 			);
@@ -256,7 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10AAE35495C1F972FC394218 /* PersistenceServiceDI.swift in Sources */,
+				AEB1DC630FED3864806FD69B /* PersistenceServiceFactory.m in Sources */,
 				F5793938FEF80A1C4FDD16AE /* PersistenceServiceFactoryImpl.swift in Sources */,
 				2DFBCCF51990FA273D14172B /* PersistenceServiceImpl.swift in Sources */,
 			);

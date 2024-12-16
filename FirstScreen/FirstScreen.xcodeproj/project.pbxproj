@@ -10,14 +10,16 @@
 		079546A5068CDB0C74A77BA8 /* FirstScreenInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3194098085ECCAEEA912A8 /* FirstScreenInterface.swift */; };
 		0B4AF8153235B0CA450AC18A /* SecondScreenInterface.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 799ED3A3A8741209489A740A /* SecondScreenInterface.framework */; };
 		0CFCCDDCCFC31B456056C0B3 /* FirstScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C849DCD75ADA8EC218455DAC /* FirstScreenPresenter.swift */; };
-		201A74EC5A420D084D79995C /* Swinject.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = A740AA757E602A41CA36330A /* Swinject.framework */; };
 		311CDE06935C737C1AAA414A /* FirstScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C537F248D32D5200F48E86E6 /* FirstScreenFactory.swift */; };
+		3A655F203657114A1ED9E3B5 /* FirstScreenAppearanceFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8CF861A4E23210A3BB3200 /* FirstScreenAppearanceFactory.m */; };
+		50BE98EF6203673E10B12DAF /* FirstScreenFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 959F81C22A081B53401C6C78 /* FirstScreenFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		54FF62CA5C25B5E0B1C1930F /* FirstScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25453EA674AA2D316EF9064 /* FirstScreenViewController.swift */; };
 		75B1CCA55C2CA13E4B5B2E8F /* FirstScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B7E809818A79C19FCF6A84 /* FirstScreenRouter.swift */; };
-		875EB7682F1044469DFE31D8 /* Swinject.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = A740AA757E602A41CA36330A /* Swinject.framework */; };
-		A6F8713B270374D2995C5447 /* FirstScreenDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAFA8BDC1C1B35A6B75F7A8 /* FirstScreenDI.swift */; };
+		AB7C86AF13106CEEE96C7FC2 /* FirstScreenFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A28CE1116E90D1011F9DA5F /* FirstScreenFactory.m */; };
 		ADFC4BD348E6CF6DC8617162 /* FirstScreenAppearanceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D15262F11A7650207B2119 /* FirstScreenAppearanceImpl.swift */; };
 		D6BAA1C4A736A7F096F17DE6 /* FirstScreenInterface.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 42805097AD1CEFA1E192F25C /* FirstScreenInterface.framework */; };
+		FB26A4F08E8CEDFC71ECAF87 /* FirstScreenInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FF31AA1A9C3D2854121301B /* FirstScreenInterface.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBB9882837D8DE43D7138365 /* FirstScreenAppearanceFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C9032DB2243F4D9576BC85 /* FirstScreenAppearanceFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,17 +40,6 @@
 			files = (
 				D6BAA1C4A736A7F096F17DE6 /* FirstScreenInterface.framework in Dependencies */,
 				0B4AF8153235B0CA450AC18A /* SecondScreenInterface.framework in Dependencies */,
-				201A74EC5A420D084D79995C /* Swinject.framework in Dependencies */,
-			);
-			name = Dependencies;
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-		4C781B02DC53E756E30C808D /* Dependencies */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 8;
-			dstSubfolderSpec = 16;
-			files = (
-				875EB7682F1044469DFE31D8 /* Swinject.framework in Dependencies */,
 			);
 			name = Dependencies;
 			runOnlyForDeploymentPostprocessing = 1;
@@ -76,12 +67,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0FAFA8BDC1C1B35A6B75F7A8 /* FirstScreenDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenDI.swift; sourceTree = "<group>"; };
+		1FF31AA1A9C3D2854121301B /* FirstScreenInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstScreenInterface.h; sourceTree = "<group>"; };
 		26D15262F11A7650207B2119 /* FirstScreenAppearanceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenAppearanceImpl.swift; sourceTree = "<group>"; };
+		2A28CE1116E90D1011F9DA5F /* FirstScreenFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstScreenFactory.m; sourceTree = "<group>"; };
 		42805097AD1CEFA1E192F25C /* FirstScreenInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FirstScreenInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58528B0B235CDBF12A0E6F5C /* FirstScreenImpl-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "FirstScreenImpl-Info.plist"; sourceTree = "<group>"; };
+		63C9032DB2243F4D9576BC85 /* FirstScreenAppearanceFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstScreenAppearanceFactory.h; sourceTree = "<group>"; };
 		799ED3A3A8741209489A740A /* SecondScreenInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SecondScreenInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A740AA757E602A41CA36330A /* Swinject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swinject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		959F81C22A081B53401C6C78 /* FirstScreenFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstScreenFactory.h; sourceTree = "<group>"; };
+		BB8CF861A4E23210A3BB3200 /* FirstScreenAppearanceFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstScreenAppearanceFactory.m; sourceTree = "<group>"; };
 		C25453EA674AA2D316EF9064 /* FirstScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenViewController.swift; sourceTree = "<group>"; };
 		C537F248D32D5200F48E86E6 /* FirstScreenFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenFactory.swift; sourceTree = "<group>"; };
 		C849DCD75ADA8EC218455DAC /* FirstScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenPresenter.swift; sourceTree = "<group>"; };
@@ -130,6 +124,9 @@
 		45BB0196B37093246D2D95C7 /* Interface */ = {
 			isa = PBXGroup;
 			children = (
+				63C9032DB2243F4D9576BC85 /* FirstScreenAppearanceFactory.h */,
+				959F81C22A081B53401C6C78 /* FirstScreenFactory.h */,
+				1FF31AA1A9C3D2854121301B /* FirstScreenInterface.h */,
 				CE3194098085ECCAEEA912A8 /* FirstScreenInterface.swift */,
 			);
 			path = Interface;
@@ -158,7 +155,6 @@
 				F92B6567C1451681C183B65A /* FirstScreenImpl.framework */,
 				42805097AD1CEFA1E192F25C /* FirstScreenInterface.framework */,
 				799ED3A3A8741209489A740A /* SecondScreenInterface.framework */,
-				A740AA757E602A41CA36330A /* Swinject.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -166,8 +162,9 @@
 		C553A11C8F1EBE2FC4CE4145 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				BB8CF861A4E23210A3BB3200 /* FirstScreenAppearanceFactory.m */,
 				26D15262F11A7650207B2119 /* FirstScreenAppearanceImpl.swift */,
-				0FAFA8BDC1C1B35A6B75F7A8 /* FirstScreenDI.swift */,
+				2A28CE1116E90D1011F9DA5F /* FirstScreenFactory.m */,
 				C537F248D32D5200F48E86E6 /* FirstScreenFactory.swift */,
 				C849DCD75ADA8EC218455DAC /* FirstScreenPresenter.swift */,
 				F0B7E809818A79C19FCF6A84 /* FirstScreenRouter.swift */,
@@ -178,16 +175,29 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		4D05668F5A36C82FD1830249 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBB9882837D8DE43D7138365 /* FirstScreenAppearanceFactory.h in Headers */,
+				50BE98EF6203673E10B12DAF /* FirstScreenFactory.h in Headers */,
+				FB26A4F08E8CEDFC71ECAF87 /* FirstScreenInterface.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		8DBA98BA7C563FB1DB00F0E1 /* FirstScreenInterface */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17696878B385654DFAB192D0 /* Build configuration list for PBXNativeTarget "FirstScreenInterface" */;
 			buildPhases = (
+				4D05668F5A36C82FD1830249 /* Headers */,
 				111CAA800EC5AD841BB03C5E /* Sources */,
 				EAB8F2D6F46753B6DD51EF79 /* Resources */,
 				AE79940950389CE9B24ACBF7 /* Embed Frameworks */,
 				440141DBCA9D1BAE01CDBADD /* Frameworks */,
-				4C781B02DC53E756E30C808D /* Dependencies */,
 			);
 			buildRules = (
 			);
@@ -277,8 +287,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A655F203657114A1ED9E3B5 /* FirstScreenAppearanceFactory.m in Sources */,
 				ADFC4BD348E6CF6DC8617162 /* FirstScreenAppearanceImpl.swift in Sources */,
-				A6F8713B270374D2995C5447 /* FirstScreenDI.swift in Sources */,
+				AB7C86AF13106CEEE96C7FC2 /* FirstScreenFactory.m in Sources */,
 				311CDE06935C737C1AAA414A /* FirstScreenFactory.swift in Sources */,
 				0CFCCDDCCFC31B456056C0B3 /* FirstScreenPresenter.swift in Sources */,
 				75B1CCA55C2CA13E4B5B2E8F /* FirstScreenRouter.swift in Sources */,

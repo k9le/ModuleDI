@@ -14,7 +14,6 @@
 		35A6C65381CE052D0683D75C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9073A93A2F4DD9025ECD682E /* Assets.xcassets */; };
 		3D20BF9DDC2FB62D67093BB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B3363809757ECBCE1F729F /* AppDelegate.swift */; };
 		4FE278610B44390F4D8973E9 /* NetworkServiceImpl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64E692ACC07FF06DBACDB0F7 /* NetworkServiceImpl.framework */; };
-		584205E528F3B0817F73AE60 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55EC990210A516B944716D7D /* Swinject.framework */; };
 		70DD871701EAD5042D17833A /* FirstScreenImpl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28523EF28F49AF15EC25836E /* FirstScreenImpl.framework */; };
 		779B336D08BE9C46D26697BF /* PersistenceServiceImpl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F1A664BC193101287820307 /* PersistenceServiceImpl.framework */; };
 		8DF46EDA9A8AD8E785CF9B6E /* PersistenceServiceInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2B4A76ADD0DA28523CEB2EE /* PersistenceServiceInterface.framework */; };
@@ -42,7 +41,6 @@
 		28523EF28F49AF15EC25836E /* FirstScreenImpl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FirstScreenImpl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		30FD477C717BB6B42F2B8256 /* TuistAssets+ModuleDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistAssets+ModuleDI.swift"; sourceTree = "<group>"; };
 		3BF8BD15BC2CB171DCE39005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		55EC990210A516B944716D7D /* Swinject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swinject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64E692ACC07FF06DBACDB0F7 /* NetworkServiceImpl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkServiceImpl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71CDDA3E7A83FCA3DBEFAC8C /* ModuleDI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModuleDI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9073A93A2F4DD9025ECD682E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -72,7 +70,6 @@
 				8DF46EDA9A8AD8E785CF9B6E /* PersistenceServiceInterface.framework in Frameworks */,
 				98820669B37035AB79179107 /* SecondScreenImpl.framework in Frameworks */,
 				F4AFDABD052C78BFB6E3C5ED /* SecondScreenInterface.framework in Frameworks */,
-				584205E528F3B0817F73AE60 /* Swinject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,7 +105,6 @@
 				A2B4A76ADD0DA28523CEB2EE /* PersistenceServiceInterface.framework */,
 				B495641644500FF6A8F132C6 /* SecondScreenImpl.framework */,
 				AC5810525A5AB5C07188C881 /* SecondScreenInterface.framework */,
-				55EC990210A516B944716D7D /* Swinject.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
