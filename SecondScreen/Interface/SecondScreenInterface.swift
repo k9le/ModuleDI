@@ -7,6 +7,4 @@
 
 import UIKit
 
-public protocol SecondScreenFactory {
-    func makeSecondScreen(with theme: UIUserInterfaceStyle) -> UIViewController
-}
+// dummy file is required

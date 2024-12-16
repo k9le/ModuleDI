@@ -7,16 +7,10 @@
 
 import UIKit
 import FirstScreenInterface
-import FirstScreenImpl
-import SecondScreenImpl
-import NetworkServiceImpl
-import PersistenceServiceImpl
-import Swinject
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-    private let container = Swinject.Container()
 
     func scene(
         _ scene: UIScene,
@@ -25,14 +19,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     ) {
         guard let wc = (scene as? UIWindowScene) else { return }
 
-        registerDependencies()
-
         let window = UIWindow(windowScene: wc)
         window.makeKeyAndVisible()
         self.window = window
 
-        let screen1VCFactory = container.resolve(FirstScreenFactory.self)!
-        let screen1VC = screen1VCFactory.makeFirstScreen()
+        let screen1VC = FirstScreenFactory.makeFirstScreen(with: nil)
         window.rootViewController = UINavigationController(rootViewController: screen1VC)
     }
 
@@ -45,12 +36,4 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func sceneWillEnterForeground(_ scene: UIScene) {}
 
     func sceneDidEnterBackground(_ scene: UIScene) { }
-
-
-    private func registerDependencies() {
-        FirstScreenDI.registerYourDependencies(container)
-        SecondScreenDI.registerYourDependencies(container)
-        NetworkServiceDI.registerYourDependencies(container)
-        PersistenceServiceDI.registerYourDependencies(container)
-    }
 }

@@ -9,22 +9,17 @@ import UIKit
 import SecondScreenInterface
 import NetworkServiceInterface
 import PersistenceServiceInterface
-import Swinject
 
-final class SecondScreenFactoryImpl: SecondScreenFactory {
+@objc public
+final class SecondScreenFactoryImpl: NSObject {
 
-    private let diResolver: any Swinject.Resolver
-
-    init(diResolver: any Swinject.Resolver) {
-        self.diResolver = diResolver
-    }
-
-    func makeSecondScreen(with theme: UIUserInterfaceStyle) -> UIViewController {
+    @objc public
+    static func makeSecondScreen(with theme: UIUserInterfaceStyle) -> UIViewController {
 
         let router = SecondScreenRouter()
 
-        let networkServiceFactory = diResolver.resolve(NetworkServiceFactory.self)!
-        let persistenceServiceFactory = diResolver.resolve(PersistenceServiceFactory.self)!
+        let networkServiceFactory = NetworkServiceFactory()
+        let persistenceServiceFactory = PersistenceServiceFactory()
 
         let presenter = SecondScreenPresenterImpl(
             router: router,

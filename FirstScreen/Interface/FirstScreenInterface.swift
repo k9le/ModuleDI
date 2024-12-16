@@ -7,12 +7,9 @@
 
 import UIKit
 
+@objc
 public protocol FirstScreenAppearance {
     var backgroundColor: UIColor { get }
     var button1Title: String { get }
     var button2Title: String { get }
-}
-
-public protocol FirstScreenFactory {
-    func makeFirstScreen() -> UIViewController
 }

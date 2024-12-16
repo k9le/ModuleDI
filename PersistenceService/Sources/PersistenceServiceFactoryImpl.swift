@@ -5,18 +5,14 @@
 //  Created by Vasiliy Fedotov on 22.11.2024.
 //
 
+import Foundation
 import PersistenceServiceInterface
-import Swinject
 
-final class PersistenceServiceFactoryImpl: PersistenceServiceFactory {
+@objc public
+final class PersistenceServiceFactoryImpl: NSObject {
 
-    private let diResolver: any Swinject.Resolver
-
-    init(diResolver: any Swinject.Resolver) {
-        self.diResolver = diResolver
-    }
-
+    @objc public static
     func makePersistenceService() -> PersistenceServiceInterface {
-        PersistenceServiceImpl(diResolver: diResolver)
+        PersistenceServiceImpl()
     }
 }
